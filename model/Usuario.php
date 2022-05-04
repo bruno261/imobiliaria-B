@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Banco.php';
-require_once '../Conexao.php';
+require_once './Conexao.php';
 
 class Usuario extends Banco{
 
@@ -69,6 +69,7 @@ class Usuario extends Banco{
     }
 
     public function remove($id){
+       
 
     }
 
