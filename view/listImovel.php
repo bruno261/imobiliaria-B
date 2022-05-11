@@ -18,7 +18,7 @@ require_once '../head.php';
         <tbody>
             <?php
             //importa o UsuarioController.php
-            require_once '../controller/ImovelController.php';
+            require_once './controller/ImovelController.php';
             //Chama uma função PHP que permite informar a classe e o Método que será acionado
             $imoveis = call_user_func(array('ImovelController','listar'));
             //Verifica se houve algum retorno

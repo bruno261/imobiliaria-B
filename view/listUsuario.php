@@ -1,5 +1,5 @@
 <?php
-require_once '../head.php';
+require_once './head.php';
 ?>
 <div class="container">
 
@@ -10,13 +10,13 @@ require_once '../head.php';
             <tr>
                 <th>Login</th>
                 <th>Permissão</th>
-                <th><a href="">Novo</a></th>
+                <th><a href="CadUsuario">Novo</a></th>
             </tr>
         </thead>
         <tbody>
             <?php
             //importa o UsuarioController.php
-            require_once '../controller/UsuarioController.php';
+            require_once './controller/UsuarioController.php';
             //Chama uma função PHP que permite informar a classe e o Método que será acionado
             $usuarios = call_user_func(array('UsuarioController','listar'));
             //Verifica se houve algum retorno

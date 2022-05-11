@@ -10,45 +10,41 @@ class Usuario extends Banco{
     private $senha;
     private $permissao;
 
-    public function getId()
-    {
+    public function getId(){
         return $this->id;
     }
 
-    public function setId($id)
-    {
+    public function setId($id){
         $this->id = $id;
     }
 
-    public function getLogin()
-    {
-        return $this->login;
+    public function getLogin(){
+            return $this->login;
     }
 
-    public function setLogin($login)
-    {
+    public function setLogin($login){
         $this->login = $login;
 
     }
-    public function getSenha()
-    {
+    public function getSenha(){
         return $this->senha;
     }
 
-    public function setSenha($senha)
-    {
+    public function setSenha($senha){
         $this->senha = $senha;
     }
 
-    public function getPermissao()
-    {
+    public function getPermissao(){
         return $this->permissao;
     }
 
-    public function setPermissao($permissao)
-    {
+    public function setPermissao($permissao){
         $this->permissao = $permissao;
     }
+
+
+
+
 
     public function save(){
 
@@ -68,6 +64,9 @@ class Usuario extends Banco{
         return $result;
     }
 
+
+
+
     public function remove($id){
        
 
@@ -81,6 +80,7 @@ class Usuario extends Banco{
 
     }
 
+    
     public function listAll(){
          //cria um objeto do tipo conexao
          $conexao = new Conexao();
